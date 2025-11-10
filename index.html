@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexteach 360 - Interactive ESL Games</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Nexteach 360 Interactive ESL Games</h1>
+            <p class="subtitle">Learn English through interactive games</p>
+        </header>
+
+        <div class="game-selection">
+            <h2>Choose a Game</h2>
+            <div class="game-cards">
+                <div class="game-card" onclick="loadGame('word-match')">
+                    <h3>Word Match</h3>
+                    <p>Match words with their meanings</p>
+                    <button>Play Now</button>
+                </div>
+                <div class="game-card" onclick="loadGame('vocabulary-quiz')">
+                    <h3>Vocabulary Quiz</h3>
+                    <p>Test your vocabulary knowledge</p>
+                    <button>Play Now</button>
+                </div>
+                <div class="game-card" onclick="loadGame('sentence-builder')">
+                    <h3>Sentence Builder</h3>
+                    <p>Build correct sentences</p>
+                    <button>Play Now</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="game-container" class="game-container hidden">
+            <button class="back-button" onclick="backToMenu()">← Back to Menu</button>
+            <div id="game-content"></div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/games/word-match.js"></script>
+    <script src="js/games/vocabulary-quiz.js"></script>
+    <script src="js/games/sentence-builder.js"></script>
+</body>
+</html>
