@@ -1,1 +1,0 @@
-Demo scripts are not needed for ZippyWater2D to function.
